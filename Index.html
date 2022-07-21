@@ -4,76 +4,261 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="CSS/Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/794157a801.js" crossorigin="anonymous"></script>
     <title>Booki</title>
 </head>
 
 <body>
-    <header>
-        <img src="Assets/Desktop/Booki@3x.png" alt="Bookie-logo">
-        <nav>
-            <ul>
-                <li> <a href="#lodging">Hébergements</a> </li>
-                <li>
-                    <a href="#activities">Activités</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <div>
-        <section class="home">
-    <div>
-            <h1>Trouvez votres hébergement pour des vacances de rêves </h1>
-            <p class="home_desc">En pleins centre ville ou pleine nature</p>
-    </div>
-    <div class="home_form">
-        <form method="post">
-            <i class="fa-solid fa-location-dot"></i>
-            <input class="home_form_search" type="search" name="search" value="Marseille, France">
-            <input class="home_form_submit" type="submit" value="Rechercher">
-        </form>
-    <div class="home_filter">
-    <h2>Filtres</h2>
-    <ul>
-        <li><i class="fa-solid fa-money-bill-1-wave"></i><p><h3>Economique</h3></p></li>
-        <li><i class="fa-solid fa-child-reaching"></i><p><h3>Familial</h3></p></li>
-        <li><i class="fa-solid fa-heart"></i><p><h3>Romantique</h3></p></li>
-        <li><i class="fa-solid fa-dog"></i><p><h3>Animaux autorisés</h3></p></li>
-    </ul>
-    </div>
-    <div class="home_info">
-        <i class="fa-solid fa-info"></i>
-<p>Plus de 500 logements sont disponibles dans cette ville</p>
-    </div>
-    </section>
-    <main>
-    <div class="main_bloc1">
-        <section class="main_lodging">
-            <h2>Hébergement à Marseille</h2>
-            <div class="main_lodging_hotel">
-                <a href="#">
-                    <figure>
-                        <img src="Assets/Desktop/Lodging/Cannebiere.jpg" alt="Auberge La Cannebière">
-                        <figcaption>
-                            <h3>Auberge la Cannebière</h3>
-                            <p>Nuit à partir de <strong>25€</strong></p>
-                            <p>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </p>
-                        </figcaption>
-                    </figure>
-                </a>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="logo">
+                <img src="Assets/Desktop/Booki@3x.png" alt="Bookie-logo">
             </div>
-            <h2>Les plus populaires</h2>
-            <h2>Activités à Marseilles</h2>
-        </section>
+            <!-- Navigation -->
+            <nav>
+                <ul>
+                    <li> <a href="#lodging">Hébergements</a> </li>
+                    <li>
+                        <a href="#activities">Activités</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="home">
+                <div>
+                    <h1>Trouvez votres hébergement pour des vacances de rêves </h1>
+                    <p class="home_desc">En pleins centre ville ou pleine nature</p>
+                </div>
+                <!-- Search bar -->
+                <div class="home_form">
+                    <form>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <input class="home_form_search" type="search" name="search" value="Marseille, France">
+                        <input class="home_form_submit" type="button" value="Rechercher">
+                    </form>
+                    <!-- Filters -->
+                    <div class="home_filter">
+                        <h2>Filtres</h2>
+                        <ul>
+                            <li><i class="fa-solid fa-money-bill-1-wave"></i>
+                                Economique
+                            </li>
+                            <li><i class="fa-solid fa-child-reaching"></i>
+                                Familial
+                            </li>
+                            <li><i class="fa-solid fa-heart"></i>
+                                Romantique
+                            </li>
+                            <li><i class="fa-solid fa-dog"></i>
+                                Animaux autorisés
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Infos -->
+                    <div class="home_info">
+                        <i class="fa-solid fa-info"></i>
+                        <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                    </div>
+            </section>
+            <div class="main_bloc1">
+                <!-- BEGIN Lodging block -->
+                <section class="lodging">
+                    <h2>Hébergement à Marseille</h2>
+                    <div class="main_lodging_hotel">
+                        <!-- First hotel -->
+                        <div>
+                            <a href="#">
+                                <figure>
+                                    <img src="Assets/Desktop/Lodging/Cannebiere.jpg" alt="Auberge La Cannebière">
+                                    <figcaption>
+                                        <h3>Auberge la Cannebière</h3>
+                                        <p>Nuit à partir de <strong>25€</strong></p>
+                                        <div class="stars">
+                                            <i class="fa-solid fa-star active"></i> <!-- Blue star -->
+                                            <i class="fa-solid fa-star active"></i>
+                                            <i class="fa-solid fa-star active"></i>
+                                            <i class="fa-solid fa-star"></i> <!-- Grey star -->
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <!-- Second hotel -->
+                        <div>
+                            <a href="#">
+                                <figure>
+                                    <img src="Assets/Desktop/Lodging/Port.jpg" alt="Hôtel du port">
+                                    <figcaption>
+                                        <h3>Hôtel du port</h3>
+                                        <p>Nuit à partir de <strong>52€</strong></p>
+                                        <div class="stars">
+                                            <i class="fa-solid fa-star active"></i>
+                                            <i class="fa-solid fa-star active"></i>
+                                            <i class="fa-solid fa-star active"></i>
+                                            <i class="fa-solid fa-star active"></i>
+                                            <i class="fa-solid fa-star active"></i>
+
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <!-- Third hotel -->
+                        <div>
+                            <a href="#">
+                                <figure>
+                                    <img src="Assets/Desktop/Lodging/Mouettes.jpg" alt="Hôtel Les mouettes">
+                                    <figcaption>
+                                        <h3>Hôtel Les mouettes</h3>
+                                        <p>Nuit à partir de <strong>76€</strong></p>
+                                        <div class="stars">
+                                            <i class="fa-solid fa-star active"></i>
+                                            <i class="fa-solid fa-star active"></i>
+                                            <i class="fa-solid fa-star active"></i>
+                                            <i class="fa-solid fa-star active"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <!-- Fourth hotel -->
+                        <div>
+                            <a href="#">
+                                <figure>
+                                    <img src="Assets/Desktop/Lodging/Mer.jpg" alt="Auberge Hôtel de la mer">
+                                    <figcaption>
+                                        <h3>Hôtel de la mer</h3>
+                                        <p>Nuit à partir de <strong>46€</strong></p>
+                                        <div class="stars">
+                                            <i class="fa-solid fa-star active"></i>
+                                            <i class="fa-solid fa-star active"></i>
+                                            <i class="fa-solid fa-star active"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <!-- Fifth hotel -->
+                        <div>
+                            <a href="#">
+                                <figure>
+                                    <img src="Assets/Desktop/Lodging/Panier.jpg" alt="Auberge Le panier">
+                                    <figcaption>
+                                        <h3>Auberge Le panier</h3>
+                                        <p>Nuit à partir de <strong>23€</strong></p>
+                                        <div class="stars">
+                                            <i class="fa-solid fa-star active"></i>
+                                            <i class="fa-solid fa-star active"></i>
+                                            <i class="fa-solid fa-star active"></i>
+                                            <i class="fa-solid fa-star active"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <!-- Sixth hotel -->
+                        <div>
+                            <a href="#">
+                                <figure>
+                                    <img src="Assets/Desktop/Lodging/ChezAmina.jpg" alt="Hôtel chez Amina">
+                                    <figcaption>
+                                        <h3>Auberge la Cannebière</h3>
+                                        <p>Nuit à partir de <strong>96€</strong></p>
+                                        <div class="stars">
+                                            <i class="fa-solid fa-star active"></i>
+                                            <i class="fa-solid fa-star active"></i>
+                                            <i class="fa-solid fa-star active"></i>
+                                            <i class="fa-solid fa-star active"></i>
+                                            <i class="fa-solid fa-star active"></i>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Show more link -->
+                    <a class="showMore" href="">Afficher plus</a>
+                </section>
+                <!-- END Lodging bloc -->
+                <!-- BEGIN Popular block -->
+                <section class="popular">
+                    <h2>Les plus populaires</h2>
+                    <div class="main_popular">
+                        <div>
+                            <a href="#">
+                                <figure>
+                                    <img src="Assets/Desktop/Lodging/Cannebiere.jpg" alt="Auberge La Cannebière">
+                                    <figcaption>
+                                        <h3>Auberge la Cannebière</h3>
+                                        <p>Nuit à partir de <strong>25€</strong></p>
+                                        <div class="stars">
+                                            <i class="fa-solid fa-star active"></i>
+                                            <i class="fa-solid fa-star active"></i>
+                                            <i class="fa-solid fa-star active"></i>
+                                            <i class="fa-solid fa-star active"></i>
+                                            <i class="fa-solid fa-star"></i>
+
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <figure>
+                                    <img src="Assets/Desktop/Lodging/Cannebiere.jpg" alt="Auberge La Cannebière">
+                                    <figcaption>
+                                        <h3>Auberge la Cannebière</h3>
+                                        <p>Nuit à partir de <strong>25€</strong></p>
+                                        <div class="stars">
+                                            <i class="fa-solid fa-star active"></i>
+                                            <i class="fa-solid fa-star active"></i>
+                                            <i class="fa-solid fa-star active"></i>
+                                            <i class="fa-solid fa-star active"></i>
+                                            <i class="fa-solid fa-star"></i>
+
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <figure>
+                                    <img src="Assets/Desktop/Lodging/Cannebiere.jpg" alt="Auberge La Cannebière">
+                                    <figcaption>
+                                        <h3>Auberge la Cannebière</h3>
+                                        <p>Nuit à partir de <strong>25€</strong></p>
+                                        <div class="stars">
+                                            <i class="fa-solid fa-star active"></i>
+                                            <i class="fa-solid fa-star active"></i>
+                                            <i class="fa-solid fa-star active"></i>
+                                            <i class="fa-solid fa-star active"></i>
+                                            <i class="fa-solid fa-star"></i>
+
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <!-- END Popular block -->
+                <!-- BEGIN Activity block -->
+                <!-- END Activity block  -->
+            </div>
+        </main>
     </div>
-</main>
-    
 </body>
 <footer>
     <div class="footer__info">
@@ -99,4 +284,5 @@
         </ul>
     </div>
 </footer>
+
 </html>
