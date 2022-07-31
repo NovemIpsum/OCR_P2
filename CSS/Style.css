@@ -1,3 +1,7 @@
+/*==============================================================*/
+/*========================== DESKTOP ===========================*/
+/*==============================================================*/
+
 /* BASE */
 * {
     padding: 0;
@@ -356,9 +360,13 @@ main {
     flex-direction: column;
     height: 120px;
     padding: 5px;
+    margin-left: 5px;
     justify-content: space-evenly;
 }
 
+.popstar {
+    padding-top: 30px;
+}
 
 /* ACTIVITY PART */
 
@@ -418,6 +426,16 @@ main {
     width: 100%;
 }
 
+.acti_medium {
+    height: 225px;
+    width: 100%;
+}
+
+.acti_medium img{
+    height: calc(100% - 48px);
+    width: 100%;
+    vertical-align: text-bottom;
+}
 .activity_title {
     height: 50px;
     width: 100%;
@@ -451,3 +469,96 @@ footer .container {
 .footer__info li {
     margin-top: 15px;
 }
+
+
+/*==============================================================*/
+/*========================== TABLET ============================*/
+/*==============================================================*/
+
+@media screen and (max-width: 991.9px) and (min-width: 768px) {
+
+    /*BASE*/
+
+    .container {
+        margin: 30px;
+    }
+
+    /* HOME */
+    .home_form form {
+        justify-content: center;
+    }
+
+    /* FILTERS */
+
+    .home_filter {
+        justify-content: center;
+    }
+
+    .home_filter ul {
+        width: 85%;
+    }
+
+    /* LODGING / POPULAR*/
+
+    .bloc1 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    /* LODGING PART */
+
+    .main_lodging_hotel {
+        height: 450px;
+        margin-bottom: 30px;
+    }
+
+    .main_lodging_hotel a {
+        width: 266px;
+        height: 214px;
+    }
+
+    .main_lodging_hotel img {
+        width: 256px;
+        height: 120px;
+    }
+
+    /* POPULAR PART */
+
+    .main_popular {
+        height: 216px;
+    }
+
+    .main_popular a {
+        display: block;
+        width: 266px;
+        height: 214px;
+    }
+
+    .main_popular img {
+        width: 256px;
+        height: 120px;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .popular_description {
+        display: flex;
+        flex-direction: column;
+        height: 85px;
+        padding: 5px;
+        justify-content: space-evenly;
+    }
+
+    .popstar {
+        padding-top: 0px;
+    }
+
+    /* ACTIVITY PART */
+
+    .activity h2 {
+        margin-left: 30px;
+    }
+}
+
+/*==============================================================*/
+/*=========================== PHONE ============================*/
+/*==============================================================*/
