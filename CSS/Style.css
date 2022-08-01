@@ -8,7 +8,7 @@
     margin: 0;
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
-    font-size: 14px;
+    font-size: 16px;
 
 }
 
@@ -270,22 +270,28 @@ main {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    height: 430px;
+    height: 436px;
     gap: 30px;
     margin-bottom: 20px;
 }
 
-.main_lodging_hotel a {
-    flex: 1;
+.main_lodging_hotel>div {
     background-color: white;
     border: 5px solid white;
     border-radius: 25px;
     box-shadow: 0px 0px 5px 3px #e2dfdff8;
+    width: calc(33% - 18px);
+}
+
+.main_lodging_hotel a {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .main_lodging_hotel img {
-    width: 261px;
-    height: 100px;
+    width: 100%;
+    height: 120px;
     border-radius: 20px 20px 0 0;
 }
 
@@ -293,7 +299,7 @@ main {
 .lodging_description {
     display: flex;
     flex-direction: column;
-    height: 85px;
+    height: 70px;
     padding: 5px;
     justify-content: space-evenly;
 }
@@ -431,11 +437,12 @@ main {
     width: 100%;
 }
 
-.acti_medium img{
+.acti_medium img {
     height: calc(100% - 48px);
     width: 100%;
     vertical-align: text-bottom;
 }
+
 .activity_title {
     height: 50px;
     width: 100%;
@@ -456,11 +463,9 @@ footer {
 
 footer .container {
     display: flex;
-    align-items: center;
     margin-top: 60px;
     padding: 50px 0;
 }
-
 
 .footer__info {
     flex: 1;
@@ -475,12 +480,12 @@ footer .container {
 /*========================== TABLET ============================*/
 /*==============================================================*/
 
-@media screen and (max-width: 991.9px) and (min-width: 768px) {
+@media screen and (max-width: 991px) {
 
     /*BASE*/
 
     .container {
-        margin: 30px;
+        margin: 0 30px;
     }
 
     /* HOME */
@@ -491,11 +496,13 @@ footer .container {
     /* FILTERS */
 
     .home_filter {
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .home_filter ul {
+    .home_filter ul li {
         width: 85%;
+        margin-left: 10px;
     }
 
     /* LODGING / POPULAR*/
@@ -505,60 +512,74 @@ footer .container {
         flex-direction: column-reverse;
     }
 
+    .popular_description{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 5px;
+        justify-content: space-between;
+        flex: 1;
+    }
+
     /* LODGING PART */
 
     .main_lodging_hotel {
-        height: 450px;
+        height: auto;
         margin-bottom: 30px;
     }
 
-    .main_lodging_hotel a {
-        width: 266px;
-        height: 214px;
-    }
+.main_lodging_hotel>div {
+    width: calc(50% - 18px);
+}
 
-    .main_lodging_hotel img {
-        width: 256px;
-        height: 120px;
-    }
+
 
     /* POPULAR PART */
 
     .main_popular {
-        height: 216px;
+        height: auto;
     }
 
     .main_popular a {
-        display: block;
-        width: 266px;
-        height: 214px;
+        display: flex;
+        width: 100%;
+        height: 100%;
     }
 
     .main_popular img {
         width: 256px;
         height: 120px;
-        border-radius: 20px 20px 0 0;
+        border-radius: 20px 0 0 20px;
     }
 
-    .popular_description {
-        display: flex;
-        flex-direction: column;
-        height: 85px;
-        padding: 5px;
-        justify-content: space-evenly;
-    }
-
-    .popstar {
-        padding-top: 0px;
-    }
+  
 
     /* ACTIVITY PART */
 
     .activity h2 {
         margin-left: 30px;
     }
+
 }
 
 /*==============================================================*/
 /*=========================== PHONE ============================*/
 /*==============================================================*/
+
+@media screen and (max-device-width: 480px){
+
+ .container {
+    margin: 0px;
+    width: 100%;
+ }
+
+ header {
+    flex-direction: column;
+ }
+
+ .acti_tall,
+ .acti_column {
+     display: block;
+     width: calc(100% - 18px);
+ }
+}
