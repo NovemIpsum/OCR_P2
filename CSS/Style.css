@@ -690,15 +690,12 @@ footer .container {
     /* ACTIVITY PART */
 
 .activity {
-
+margin-top: 0px;
 }
 
-    .activity h2 {
-        margin-left: 30px;
-    }
-
     .main_activity {
-display: block;
+flex-direction: column;
+gap: 30px
     }
 
     .main_activity img {
@@ -715,6 +712,18 @@ display: block;
       }
 
     .acti_column {
-gap: 0px
+        gap: 30px
     }
+
+    /* FOOTER */
+
+    footer .container {
+        margin-top: 0px;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+footer ul {
+    margin-bottom: 40px;
+}
 }
