@@ -68,7 +68,7 @@ header nav ul {
 
 header nav ul li {
     min-width: 200px;
-    padding: 40px 60px;
+    padding: 40px 50px;
     border-top: 3px solid #0065FC;
     border-color: transparent;
     font-size: 20px;
@@ -237,7 +237,6 @@ main {
 }
 
 .bloc1 section {
-    background-color: #f2f2f2;
     border-radius: 20px;
     padding: 30px;
 }
@@ -255,9 +254,8 @@ main {
 /* LODGING PART */
 
 .lodging {
-
     height: auto;
-    background: #F2F2F2;
+    background-color: #f2f2f2;
     padding: 40px 40px;
     border-radius: 20px;
 }
@@ -342,7 +340,7 @@ main {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    height: 430px;
+    height: auto;
     gap: 30px
 }
 
@@ -399,11 +397,6 @@ main {
     border-radius: 20px 20px 0 0;
 }
 
-.acti_tall,
-.acti_column {
-    flex: 1;
-}
-
 .acti_tall {
     height: 490px;
     width: 25%;
@@ -419,7 +412,8 @@ main {
 .acti_column {
     display: flex;
     flex-direction: column;
-    gap: 40px
+    gap: 40px;
+    width: 25%;
 }
 
 .acti_small {
@@ -480,12 +474,18 @@ footer .container {
 /*========================== TABLET ============================*/
 /*==============================================================*/
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 991px) and (min-width: 767px) {
 
     /*BASE*/
 
     .container {
         margin: 0 30px;
+    }
+
+    /* HEADER */
+
+    header nav {
+        margin-right: -30px;
     }
 
     /* HOME */
@@ -512,7 +512,7 @@ footer .container {
         flex-direction: column-reverse;
     }
 
-    .popular_description{
+    .popular_description {
         display: flex;
         flex-direction: column;
         height: auto;
@@ -528,9 +528,9 @@ footer .container {
         margin-bottom: 30px;
     }
 
-.main_lodging_hotel>div {
-    width: calc(50% - 18px);
-}
+    .main_lodging_hotel>div {
+        width: calc(50% - 18px);
+    }
 
 
 
@@ -547,12 +547,12 @@ footer .container {
     }
 
     .main_popular img {
-        width: 256px;
+        width: 300px;
         height: 120px;
         border-radius: 20px 0 0 20px;
     }
 
-  
+
 
     /* ACTIVITY PART */
 
@@ -560,26 +560,161 @@ footer .container {
         margin-left: 30px;
     }
 
+    .main_activity {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 0;
+    }
+
+    .acti_tall,
+    .acti_column {
+        width: calc(50% - 20px);
+    }
 }
 
 /*==============================================================*/
 /*=========================== PHONE ============================*/
 /*==============================================================*/
 
-@media screen and (max-device-width: 480px){
+@media screen and (max-device-width: 767px) {
 
- .container {
-    margin: 0px;
-    width: 100%;
- }
+    /* BASE */
 
- header {
-    flex-direction: column;
- }
+    .container {
+        margin: 0px;
+        width: 100%;
+    }
 
- .acti_tall,
- .acti_column {
-     display: block;
-     width: calc(100% - 18px);
- }
+    /* HEADER */
+
+    header {
+        flex-direction: column;
+    }
+
+    header nav {
+        margin-right: 0px;
+    }
+
+    header nav ul li {
+        padding: 10px 57px;
+        border-bottom: 3px solid #0065FC;
+        border-top: none;
+        border-color: transparent;
+    }
+
+    /* HOME */
+
+    .home {
+        height: auto;
+        margin: 20px;
+    }
+
+    /* HOME SEARCH */
+
+    .home_form form {
+        justify-content: center;
+    }
+
+    /* FILTERS */
+
+    .home_filter {
+        align-items: left;
+    }
+
+    .home_filter ul {
+        flex-wrap: wrap;
+        width: 70%;
+        height: 200px;
+        justify-content: left;
+    }
+
+    .home_filter {
+        flex-direction: column;
+    }
+
+    /* LODGING / POPULAR */
+
+    .bloc1 {
+        flex-direction: column-reverse;
+    }
+
+    .bloc1 section {
+        border-radius: 0px;
+    }
+
+    .bloc2 section {
+        padding: 30px;
+    }
+
+    /* POPULAR PART */
+
+    .main_popular {
+        gap: 16px;
+    }
+
+    .main_popular img {
+        height: 138px;
+    }
+
+    .popular_description {
+        padding: 10px;
+        height: auto;
+    }
+
+    /* STARS */
+
+    .fa-star {
+        font-size: 12px;
+    }
+
+    .popstar {
+        padding-top: 60px;
+    }
+
+    /* LODGING PART */
+
+    .lodging {
+        height: auto;
+        background-color: #FFFFFF;
+    }
+
+    .main_lodging_hotel {
+        height: auto;
+        gap: 16px
+    }
+
+    .main_lodging_hotel>div {
+        width: 100%
+    }
+
+    /* ACTIVITY PART */
+
+.activity {
+
+}
+
+    .activity h2 {
+        margin-left: 30px;
+    }
+
+    .main_activity {
+display: block;
+    }
+
+    .main_activity img {
+        width: 355px;
+        height: 150px;
+    }
+
+    .acti_tall,
+    .acti_medium,
+    .acti_small,
+    .acti_small.smaller {
+        width: 355px;
+        height: 200px;
+      }
+
+    .acti_column {
+gap: 0px
+    }
 }
