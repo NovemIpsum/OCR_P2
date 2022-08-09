@@ -25,7 +25,7 @@
             <!-- Navigation -->
             <nav>
                 <ul>
-                    <li> <a href="#lodging">Hébergements</a> </li>
+                    <li class="active"> <a href="#lodging">Hébergements</a> </li>
                     <li>
                         <a href="#activities">Activités</a>
                     </li>
@@ -43,7 +43,11 @@
                     <form>
                         <i class="fa-solid fa-location-dot"></i>
                         <input class="home_form_search" type="search" name="search" value="Marseille, France">
-                        <input class="home_form_submit" type="button" value="Rechercher">
+                        <!-- <input class="home_form_submit" type="button" value="Rechercher">  -->
+                        <button class="home_form_submit">
+                            <span class="hide_mobile">Rechercher</span>
+                            <i class="fa fa-search only_mobile"></i>
+                        </button>
                     </form>
                 </div>
                 <!-- Filters -->
@@ -95,16 +99,16 @@
                         <!-- Second hotel -->
                         <div>
                             <a href="#">
-                                <img src="Assets/Desktop/Lodging/Cannebiere.jpg" alt="Auberge La Cannebière">
+                                <img src="Assets/Desktop/Lodging/Port.jpg" alt="Hôtel du port">
                                 <div class="lodging_description">
-                                    <h3>Auberge la Cannebière</h3>
-                                    <p>Nuit à partir de <strong>25€</strong></p>
+                                    <h3>Hôtel du port</h3>
+                                    <p>Nuit à partir de <strong>52€</strong></p>
                                     <div class="stars">
                                         <i class="fa-solid fa-star active"></i> <!-- Blue star -->
                                         <i class="fa-solid fa-star active"></i>
                                         <i class="fa-solid fa-star active"></i>
-                                        <i class="fa-solid fa-star"></i> <!-- Grey star -->
-                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star active"></i>
+                                        <i class="fa-solid fa-star active"></i>
                                     </div>
                                 </div>
                             </a>
@@ -112,16 +116,16 @@
                         <!-- Third hotel -->
                         <div>
                             <a href="#">
-                                <img src="Assets/Desktop/Lodging/Cannebiere.jpg" alt="Auberge La Cannebière">
+                                <img src="Assets/Desktop/Lodging/Mouettes.jpg" alt="Hôtel les mouettes">
                                 <div class="lodging_description">
-                                    <h3>Auberge la Cannebière</h3>
-                                    <p>Nuit à partir de <strong>25€</strong></p>
+                                    <h3>Hôtel les mouettes</h3>
+                                    <p>Nuit à partir de <strong>76€</strong></p>
                                     <div class="stars">
                                         <i class="fa-solid fa-star active"></i> <!-- Blue star -->
                                         <i class="fa-solid fa-star active"></i>
                                         <i class="fa-solid fa-star active"></i>
+                                        <i class="fa-solid fa-star active"></i>
                                         <i class="fa-solid fa-star"></i> <!-- Grey star -->
-                                        <i class="fa-solid fa-star"></i>
                                     </div>
                                 </div>
                             </a>
@@ -129,10 +133,10 @@
                         <!-- Fourth hotel -->
                         <div>
                             <a href="#">
-                                <img src="Assets/Desktop/Lodging/Cannebiere.jpg" alt="Auberge La Cannebière">
+                                <img src="Assets/Desktop/Lodging/Mer.jpg" alt="Hôtel de la mer">
                                 <div class="lodging_description">
-                                    <h3>Auberge la Cannebière</h3>
-                                    <p>Nuit à partir de <strong>25€</strong></p>
+                                    <h3>Hôtel de la mer</h3>
+                                    <p>Nuit à partir de <strong>46€</strong></p>
                                     <div class="stars">
                                         <i class="fa-solid fa-star active"></i> <!-- Blue star -->
                                         <i class="fa-solid fa-star active"></i>
@@ -146,16 +150,17 @@
                         <!-- Fifth hotel -->
                         <div>
                             <a href="#">
-                                <img src="Assets/Desktop/Lodging/Cannebiere.jpg" alt="Auberge La Cannebière">
+                                <img src="Assets/Desktop/Lodging/Panier.jpg" alt="Auberge Le Panier">
                                 <div class="lodging_description">
-                                    <h3>Auberge la Cannebière</h3>
-                                    <p>Nuit à partir de <strong>25€</strong></p>
+                                    <h3>Auberge Le Panier</h3>
+                                    <p>Nuit à partir de <strong>23€</strong></p>
                                     <div class="stars">
                                         <i class="fa-solid fa-star active"></i> <!-- Blue star -->
                                         <i class="fa-solid fa-star active"></i>
                                         <i class="fa-solid fa-star active"></i>
+                                        <i class="fa-solid fa-star active"></i>
                                         <i class="fa-solid fa-star"></i> <!-- Grey star -->
-                                        <i class="fa-solid fa-star"></i>
+
                                     </div>
                                 </div>
                             </a>
@@ -163,16 +168,16 @@
                         <!-- Sixth hotel -->
                         <div>
                             <a href="#">
-                                <img src="Assets/Desktop/Lodging/Cannebiere.jpg" alt="Auberge La Cannebière">
+                                <img src="Assets/Desktop/Lodging/ChezAmina.jpg" alt="Hôtel che Amina">
                                 <div class="lodging_description">
-                                    <h3>Auberge la Cannebière</h3>
-                                    <p>Nuit à partir de <strong>25€</strong></p>
+                                    <h3>Hôtel chez Amina</h3>
+                                    <p>Nuit à partir de <strong>96€</strong></p>
                                     <div class="stars">
                                         <i class="fa-solid fa-star active"></i> <!-- Blue star -->
                                         <i class="fa-solid fa-star active"></i>
                                         <i class="fa-solid fa-star active"></i>
-                                        <i class="fa-solid fa-star"></i> <!-- Grey star -->
-                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star active"></i>
+                                        <i class="fa-solid fa-star active"></i>
                                     </div>
                                 </div>
                             </a>
@@ -188,46 +193,47 @@
                     <div class="main_popular">
                         <!-- First Popular -->
                         <a href="#">
-                            <img src="Assets/Desktop/Lodging/Cannebiere.jpg" alt="Auberge La Cannebière">
+                            <img src="Assets/Desktop/Popular/soleil-matin-small.jpg" alt="Hôtel le Soleil du matin">
                             <div class="popular_description">
-                                <h3>Auberge la Cannebière</h3>
-                                <p>Nuit à partir de <strong>25€</strong></p>
+                                <h3>Hôtel le Soleil du matin</h3>
+                                <p>Nuit à partir de <strong>128€</strong></p>
                                 <div class="stars popstar">
                                     <i class="fa-solid fa-star active"></i> <!-- Blue star -->
                                     <i class="fa-solid fa-star active"></i>
                                     <i class="fa-solid fa-star active"></i>
-                                    <i class="fa-solid fa-star"></i> <!-- Grey star -->
-                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star active"></i>
+                                    <i class="fa-solid fa-star active"></i>
                                 </div>
                             </div>
                         </a>
                         <!-- second popular -->
                         <a href="#">
-                            <img src="Assets/Desktop/Lodging/Cannebiere.jpg" alt="Auberge La Cannebière">
+                            <img src="Assets/Desktop/Popular/coeur-eau-small.jpg"
+                                alt="Au coeur de l'eau Chambres d'hôtes">
                             <div class="popular_description">
-                                <h3>Auberge la Cannebière</h3>
-                                <p>Nuit à partir de <strong>25€</strong></p>
+                                <h3>Au coeur de l'eau Chambres d'hôtes</h3>
+                                <p>Nuit à partir de <strong>71€</strong></p>
                                 <div class="stars popstar">
                                     <i class="fa-solid fa-star active"></i> <!-- Blue star -->
                                     <i class="fa-solid fa-star active"></i>
                                     <i class="fa-solid fa-star active"></i>
+                                    <i class="fa-solid fa-star active"></i>
                                     <i class="fa-solid fa-star"></i> <!-- Grey star -->
-                                    <i class="fa-solid fa-star"></i>
                                 </div>
                             </div>
                         </a>
                         <!-- third popular -->
                         <a href="#">
-                            <img src="Assets/Desktop/Lodging/Cannebiere.jpg" alt="Auberge La Cannebière">
+                            <img src="Assets/Desktop/Popular/Tout-bleu-blanc-small.jpg" alt="Hôtel Tout Bleu et Blanc">
                             <div class="popular_description">
-                                <h3>Auberge la Cannebière</h3>
-                                <p>Nuit à partir de <strong>25€</strong></p>
+                                <h3>Hôtel Tout Bleu et Blanc</h3>
+                                <p>Nuit à partir de <strong>68€</strong></p>
                                 <div class="stars popstar">
                                     <i class="fa-solid fa-star active"></i> <!-- Blue star -->
                                     <i class="fa-solid fa-star active"></i>
                                     <i class="fa-solid fa-star active"></i>
+                                    <i class="fa-solid fa-star active"></i>
                                     <i class="fa-solid fa-star"></i> <!-- Grey star -->
-                                    <i class="fa-solid fa-star"></i>
                                 </div>
                             </div>
                         </a>
@@ -242,7 +248,7 @@
                     <div class="main_activity">
                         <!-- first activity tall -->
                         <div class="acti_tall">
-                            <img src="Assets/Desktop/Lodging/Cannebiere.jpg" alt="Auberge La cannebière">
+                            <img src="Assets/Desktop/Activity/Vieux-Port.jpg" alt="Vieux Port">
                             <div class="activity_title">
                                 <h3>Le vieux port</h3>
                             </div>
@@ -250,39 +256,39 @@
                         <!-- first activity small -->
                         <div class="acti_column">
                             <div class="acti_small">
-                                <img src="Assets/Desktop/Lodging/Cannebiere.jpg" alt="Auberge La cannebière">
+                                <img src="Assets/Desktop/Activity/Fort-Pomegues.jpg" alt="Fort du Pomègues">
                                 <div class="activity_title">
-                                    <h3>Le vieux port</h3>
+                                    <h3>Fort du Pomègues</h3>
                                 </div>
                             </div>
                             <!-- second activity small  -->
                             <div class="acti_small smaller">
-                                <img src="Assets/Desktop/Lodging/Cannebiere.jpg" alt="Auberge La cannebière">
+                                <img src="Assets/Desktop/Activity/Iles-Frioul.jpg" alt="îles du Frioul">
                                 <div class="activity_title">
-                                    <h3>Le vieux port</h3>
+                                    <h3>Îles du Frioul</h3>
                                 </div>
                             </div>
                         </div>
                         <!-- seconde activity tall  -->
                         <div class="acti_tall">
-                            <img src="Assets/Desktop/Lodging/Cannebiere.jpg" alt="Auberge La cannebière">
+                            <img src="Assets/Desktop/Activity/Calanques.jpg" alt="Parc National des Calanques">
                             <div class="activity_title">
-                                <h3>Le vieux port</h3>
+                                <h3>Parc National des Calanques</h3>
                             </div>
                         </div>
                         <!-- third activity small -->
                         <div class="acti_column">
                             <div class="acti_medium">
-                                <img src="Assets/Desktop/Lodging/Cannebiere.jpg" alt="Auberge La cannebière">
+                                <img src="Assets/Desktop/Activity/Notre-Dame.jpg" alt="Notre Dame de la Garde">
                                 <div class="activity_title">
-                                    <h3>Le vieux port</h3>
+                                    <h3>Notre Dame de la Garde</h3>
                                 </div>
                             </div>
                             <!-- second activity small  -->
                             <div class="acti_medium">
-                                <img src="Assets/Desktop/Lodging/Cannebiere.jpg" alt="Auberge La cannebière">
+                                <img src="Assets/Desktop/Activity/Parc Longchamp.jpg" alt="Parc Longchamp">
                                 <div class="activity_title">
-                                    <h3>Le vieux port</h3>
+                                    <h3>Parc Longchamp</h3>
                                 </div>
                             </div>
                         </div>
