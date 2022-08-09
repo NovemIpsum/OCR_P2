@@ -645,10 +645,6 @@ footer .container {
 
     /* FILTERS */
 
-    .home_filter {
-        align-items: left;
-    }
-
     .home_filter ul {
         flex-wrap: wrap;
         width: 70%;
